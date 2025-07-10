@@ -4,6 +4,12 @@
 #
 # Copyright:: 2025, The Authors, All Rights Reserved.
 # Ensure the directory /home/rohit/kohli exists
+user 'rohit' do
+  manage_home true
+  home '/home/rohit'
+  action :create
+end
+
 directory '/home/rohit/kohli' do
   owner 'rohit'
   group 'rohit'
